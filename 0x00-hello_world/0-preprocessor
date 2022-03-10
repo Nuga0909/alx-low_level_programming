@@ -1,2 +1,3 @@
 #!/bin/bash
-gcc -E 0-main.c\n
+gcc -E 0-main.c
+
