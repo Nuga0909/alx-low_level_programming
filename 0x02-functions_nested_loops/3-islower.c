@@ -1,26 +1,20 @@
 #include "main.h"
 
 /**
- * print_alphabet_x10 - print alphabet 10 times
+ * _islower - checks for lowercase
+ * @c: c is an ascii character
  *
- * Return: void
+ * Return: 1 if lowercase
  */
 
-void print_alphabet_x10(void)
+int _islower(int c)
 {
-	int round = 0;
-	char letter = 'a';
-
-	while (round < 10)
+	if (c >= 'a' && c <= 'z')
 	{
-		letter = 'a';
-		while (letter <= 'z')
-		{
-			_putchar(letter);
-			letter++;
-		}
-		_putchar('\n');
-
-		round++;
+		return (1);
+	}
+	else
+	{
+		return (0);
 	}
 }
